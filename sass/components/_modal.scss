@@ -1,0 +1,150 @@
+.modal {
+  color: var(--title-text-color);
+}
+
+.signup-heading {
+  color: var(--primary-text-color);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.close {
+  background: none;
+}
+
+.close:hover {
+  fill: var(--accent-text-color);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.signup-textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.signup-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 250ms linear;
+
+  padding-left: 42px;
+}
+
+.signup-form-input-wrapper {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.modal-icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+
+  transition: background-color 250ms linear;
+}
+
+.signup-form-input:focus {
+  outline: none;
+  border-color: var(--accent-text-color);
+}
+
+.signup-form-input:focus + .modal-icon {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+
+.signup-textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  margin-top: 4px;
+  margin-bottom: 20px;
+
+  transition: border-color 250ms linear;
+}
+
+.signup-textarea:focus {
+  outline: none;
+  border-color: var(--accent-text-color);
+}
+
+.signup-form-term-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.signup-form-term-desc::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  outline: 1px solid #000000;
+  margin-right: 10px;
+}
+
+.signup-form-term {
+  margin: 0;
+  margin-right: 8px;
+}
+
+.signup-term {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.signup-field {
+  text-align: left;
+}
+
+.terms-link {
+  text-decoration: underline;
+}
+
+.signup-button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: var(--accent-text-color);
+  color: var(--primary-white-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.subscribe-icon {
+  position: absolute;
+  padding-left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
+}

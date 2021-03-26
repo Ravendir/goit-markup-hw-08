@@ -1,0 +1,34 @@
+@import './utils/variables';
+@import './base/common';
+@import './base/container';
+@import './utils/hidden';
+@import './components/button';
+@import './components/link';
+
+// ==========HEADER===========
+
+@import './layout/header';
+
+// ========HERO============
+
+@import './layout/hero';
+
+// =======ADVANTAGE========
+
+@import './layout/advantage';
+
+//=========SECTION TEAM=========
+
+@import './layout/team';
+
+//========PARTNERS==============
+
+@import './layout/partners';
+
+// =========FOOTER============
+
+@import './layout/footer';
+
+// =========MODAL=============
+
+@import './components/modal';
