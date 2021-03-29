@@ -1,40 +1,160 @@
+// .section.hero {
+//   background-color: var(--hero-background-color);
+//   text-align: center;
+//   color: var(--primary-white-color);
+//   margin-bottom: 94px;
+//   background-image: url('../images/hero/studio-background.jpg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// .hero {
+//   background: rgba(47, 48, 58, 0.4);
+
+//   &-title {
+//     padding-top: 200px;
+//     margin: 0 auto;
+//     margin-bottom: 30px;
+//     max-width: 696px;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//   }
+// }
+
+// .auth-block {
+//   display: flex;
+// }
+
+// .button.primary {
+//   min-width: 200px;
+//   min-height: 50px;
+//   text-align: center;
+//   margin-bottom: 200px;
+
+//   background-color: var(--accent-text-color);
+//   color: var(--primary-white-color);
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.88;
+//   letter-spacing: 0.06em;
+//   border: none;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+// }
+
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(0, 0, 0, 0.2);
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+
+//   &.is-hidden {
+//     opacity: 0;
+//     pointer-events: none;
+//   }
+// }
+
+// .modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+
+//   width: 528px;
+//   height: 581px;
+
+//   background-color: var(--primary-white-color);
+
+//   &-svg {
+//     width: 11px;
+//     height: 11px;
+//   }
+// }
+
+// .close {
+//   position: absolute;
+//   border: none;
+//   outline: none;
+//   width: 30px;
+//   height: 30px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   top: 8px;
+//   right: 8px;
+//   cursor: pointer;
+
+//   background: var(--secondary-background-color);
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+// }
+
+// .sighup-term {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .signup-form-term-desc {
+//   position: relative;
+//   padding-left: 8px;
+//   cursor: pointer;
+
+//   &::before {
+//     content: '';
+//     top: 0;
+//     left: -20px;
+//     width: 15px;
+//     height: 15px;
+//     border: 2px solid var(--primary-text-color);
+//   }
+// }
+
+// .signup-form-term:checked + .signup-form-term-desc::before {
+//   border-color: var(--accent-text-color);
+//   background: var(--accent-text-color) url(../images/Vector.svg) no-repeat
+//     center center;
+// }
+
 .section.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background: rgba(47, 48, 58, 0.4);
   background-color: var(--hero-background-color);
   text-align: center;
   color: var(--primary-white-color);
-  margin-bottom: 94px;
-  background-image: url('../images/hero/studio-background.jpg');
+  background-image: url('../images/hero/studio-background-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  width: 100%;
 }
 
-.hero {
-  background: rgba(47, 48, 58, 0.4);
-
-  &-title {
-    padding-top: 200px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    max-width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-}
-
-.auth-block {
-  display: flex;
+.hero-title {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 360px;
 }
 
 .button.primary {
-  min-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
   text-align: center;
-  margin-bottom: 200px;
 
   background-color: var(--accent-text-color);
   color: var(--primary-white-color);
@@ -45,82 +165,4 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-
-  &.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 528px;
-  height: 581px;
-
-  background-color: var(--primary-white-color);
-
-  &-svg {
-    width: 11px;
-    height: 11px;
-  }
-}
-
-.close {
-  position: absolute;
-  border: none;
-  outline: none;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-
-  background: var(--secondary-background-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-}
-
-.sighup-term {
-  display: flex;
-  align-items: center;
-}
-
-.signup-form-term-desc {
-  position: relative;
-  padding-left: 8px;
-  cursor: pointer;
-
-  &::before {
-    content: '';
-    top: 0;
-    left: -20px;
-    width: 15px;
-    height: 15px;
-    border: 2px solid var(--primary-text-color);
-  }
-}
-
-.signup-form-term:checked + .signup-form-term-desc::before {
-  border-color: var(--accent-text-color);
-  background: var(--accent-text-color) url(../images/Vector.svg) no-repeat
-    center center;
 }
