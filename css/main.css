@@ -282,20 +282,18 @@ footer {
   margin-top: 32px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .mobile-open-btn {
-    display: none;
-  }
+.auth-icon {
+  display: none;
 }
 
 .section.hero {
   background-color: var(--hero-background-color);
   text-align: center;
   color: var(--primary-white-color);
-  margin-bottom: 94px;
-  background-image: url("../images/hero/studio-background.jpg");
+  background-image: url("../images/hero/studio-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero {
@@ -306,10 +304,10 @@ footer {
   padding-top: 200px;
   margin: 0 auto;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 380px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -434,7 +432,7 @@ footer {
   text-align: left;
 }
 
-.advantage-text:not(:last-child) {
+.advantage-list:not(:last-child) {
   margin-bottom: 30px;
 }
 
