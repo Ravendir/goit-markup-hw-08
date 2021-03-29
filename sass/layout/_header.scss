@@ -420,62 +420,65 @@
 //   color: var(--accent-text-color);
 //   fill: var(--accent-text-color);
 // }
-@media screen and (max-width: 720px) {
-  .header {
-    &-page {
-      position: relative;
-      width: 100%;
-      top: 10px;
-      left: 0;
-      transition: 0.5s;
-    }
 
-    &-logo {
-      color: var(--primary-text-color);
-    }
+.header {
+  &-page {
+    position: relative;
+    width: 100%;
+    top: 10px;
+    left: 0;
+    transition: 0.5s;
   }
 
-  .logo {
-    color: var(--accent-text-color);
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    font-weight: 700;
+  &-logo {
+    color: var(--primary-text-color);
+  }
+}
+
+.logo {
+  color: var(--accent-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+
+.auth-site .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.auth-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-site {
+  &.list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    text-align: left;
   }
 
-  .auth-site .link {
-    color: var(--title-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
-
-  .auth-site {
-    &.list {
-      display: flex;
-      flex-direction: column-reverse;
-      margin: 0;
-      text-align: left;
-    }
-
-    & .auth-block-link:hover,
-    & .auth-block-link:focus {
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      color: var(--accent-text-color);
-    }
-  }
-
-  .auth-block-link {
-    color: var(--title-text-color);
-  }
-
-  .auth-block-link:focus .auth-icon,
-  .auth-block-link:hover .auth-icon {
+  & .auth-block-link:hover,
+  & .auth-block-link:focus {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
-    fill: var(--accent-text-color);
   }
+}
+
+.auth-block-link {
+  color: var(--title-text-color);
+}
+
+.auth-block-link:focus .auth-icon,
+.auth-block-link:hover .auth-icon {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 
 .nav {
@@ -519,11 +522,11 @@
 
   &.list {
     margin: 0;
+    margin-bottom: 302px;
   }
 }
 
-.auth-icon {
-  display: none;
+@media screen and (min-width: 480px), (max-width: 768px) {
 }
 
 // .nav {

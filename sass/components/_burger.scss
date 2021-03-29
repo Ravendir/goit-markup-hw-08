@@ -98,3 +98,9 @@
 .auth-block {
   margin-top: 32px;
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .mobile-open-btn {
+    display: none;
+  }
+}
