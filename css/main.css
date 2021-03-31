@@ -2169,6 +2169,8 @@ img {
 
 .terms-link {
   text-decoration: underline;
+  color: var(--accent-text-color);
+  padding-left: 5px;
 }
 
 .signup-button {
