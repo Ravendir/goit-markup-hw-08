@@ -177,6 +177,7 @@
 .project-text {
   width: 100%;
   text-align: center;
+  font-size: 14px;
 }
 
 .project {
@@ -217,13 +218,14 @@
     height: 100%;
     color: var(--primary-white-color);
     background: rgba(33, 150, 243, 0.9);
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.55;
     letter-spacing: 0.03em;
     transform: translateY(100%);
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: left;
     padding: 63px 24px 63px 24px;
+    max-width: 100%;
   }
 
   &-list:hover .project-text,
@@ -266,6 +268,10 @@
   .button-list {
     display: flex;
     justify-content: center;
+  }
+
+  .project-text {
+    font-size: 14px;
   }
 
   .ul-project {
